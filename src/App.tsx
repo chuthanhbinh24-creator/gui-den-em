@@ -143,20 +143,20 @@ export default function App() {
                 />
             </div>
 
-            <div className="relative z-10 w-full max-w-6xl h-[80vh] flex flex-col items-center justify-center">
+            <div className="relative z-10 w-full h-screen flex flex-col items-center justify-center overflow-hidden">
                 <motion.h1 
                     initial={{ y: -50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.5 }}
-                    className="text-5xl md:text-7xl font-bold text-pink-600 mb-12 text-center drop-shadow-sm font-script"
+                    className="text-3xl sm:text-4xl md:text-6xl font-bold text-pink-600 mb-4 md:mb-8 text-center drop-shadow-sm font-script px-4"
                 >
                     Chúc Mừng Ngày Quốc Tế Phụ Nữ 8-3
                 </motion.h1>
 
-                <div className="relative w-full flex justify-center items-end gap-2 md:gap-12 h-[350px] md:h-[500px]">
+                <div className="relative w-full flex justify-center items-end gap-2 md:gap-8 h-[300px] md:h-[450px]">
                     {/* Left Photos */}
-                    <div className="flex gap-2 md:gap-8 items-end">
-                        <div className="mb-8 md:mb-12"> {/* Back frame higher */}
+                    <div className="flex gap-2 md:gap-4 items-end">
+                        <div className="mb-6 md:mb-12 transform -rotate-3"> {/* Back frame higher */}
                              <PhotoFrame 
                                 src={PHOTOS[0]} 
                                 index={0} 
@@ -164,7 +164,7 @@ export default function App() {
                                 delay={0.2}
                             />
                         </div>
-                        <div className="mb-0"> {/* Front frame lower */}
+                        <div className="mb-0 transform rotate-2"> {/* Front frame lower */}
                             <PhotoFrame 
                                 src={PHOTOS[1]} 
                                 index={1} 
@@ -189,8 +189,8 @@ Chúc em ngày 8/3 vui vẻ, luôn xinh đẹp và hạnh phúc bên người m�
                     </div>
 
                     {/* Right Photos */}
-                    <div className="flex gap-2 md:gap-8 items-end">
-                        <div className="mb-0"> {/* Front frame lower */}
+                    <div className="flex gap-2 md:gap-4 items-end">
+                        <div className="mb-0 transform -rotate-2"> {/* Front frame lower */}
                             <PhotoFrame 
                                 src={PHOTOS[2]} 
                                 index={2} 
@@ -198,7 +198,7 @@ Chúc em ngày 8/3 vui vẻ, luôn xinh đẹp và hạnh phúc bên người m�
                                 delay={0.6}
                             />
                         </div>
-                        <div className="mb-8 md:mb-12"> {/* Back frame higher */}
+                        <div className="mb-6 md:mb-12 transform rotate-3"> {/* Back frame higher */}
                             <PhotoFrame 
                                 src={PHOTOS[3]} 
                                 index={3} 
@@ -216,11 +216,11 @@ Chúc em ngày 8/3 vui vẻ, luôn xinh đẹp và hạnh phúc bên người m�
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: 20 }}
-                            className="mt-12"
+                            className="mt-8"
                         >
                             <Magnetic onClick={() => setIsVideoOpen(true)}>
-                                <button className="flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-full shadow-lg hover:shadow-xl transition-shadow font-medium">
-                                    <Play size={20} fill="currentColor" />
+                                <button className="flex items-center gap-2 px-6 py-2 md:px-8 md:py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-full shadow-lg hover:shadow-xl transition-shadow font-medium text-sm md:text-base">
+                                    <Play size={18} fill="currentColor" />
                                     Xem video kỷ niệm
                                 </button>
                             </Magnetic>

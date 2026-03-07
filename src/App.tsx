@@ -19,10 +19,10 @@ const PHOTOS = [
 ];
 
 // Custom Video Link - Replace this with your own video URL
-const VIDEO_URL = "https://videotourl.com/videos/1772898439362-b111b0e5-9704-4136-8d24-fd0950a32f2e.mp4";
+const VIDEO_URL = "https://www.dropbox.com/scl/fi/1pnzngn597ynp47bj7c0a/lv_7608946151756205328_20260306003939.mp4?rlkey=5qwg7uxa7rx3q43e1m5ip92hz&st=l7vtp5b3&raw=1";
 
 // Custom Audio Link - Replace this with your own audio URL
-const AUDIO_URL = "https://meaningful-yellow-ferdenpkfe.edgeone.app/Ng%C3%A0y%20N%C3%A0y%20N%C4%83m%20%E1%BA%A4y%20-%20Vi%E1%BB%87t%20Anh%20%20Ballad%20T%C3%A2m%20Tr%E1%BA%A1ng%20C%E1%BB%B1c%20Chill%20%20Tr%E1%BA%A1m%20C%E1%BA%A3m%20X%C3%BAc%20-%20Tr%E1%BA%A1m%20C%E1%BA%A3m%20X%C3%BAc.mp3";
+const AUDIO_URL = "https://image2url.com/r2/default/audio/1772899759049-91bf0b8c-e0fe-4b14-82f0-c6440fc1e36d.mp3";
 
 export default function App() {
   const [appState, setAppState] = useState<'loading' | 'intro' | 'main'>('loading');
@@ -57,8 +57,10 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-pink-50 overflow-hidden font-sans text-gray-900 selection:bg-pink-200 cursor-none">
-      <AudioControl audioSrc={AUDIO_URL} isVideoOpen={isVideoOpen} />
+    <div className="min-h-screen bg-pink-50 overflow-hidden font-sans text-gray-900 selection:bg-pink-200 cursor-none relative">
+      <div className="fixed bottom-4 right-4 z-[100]">
+          <AudioControl audioSrc={AUDIO_URL} isVideoOpen={isVideoOpen} />
+      </div>
       <CursorEffects enabled={true} />
 
       {/* Wish Toast */}
@@ -143,7 +145,7 @@ export default function App() {
                 />
             </div>
 
-            <div className="relative z-10 w-full h-screen flex flex-col items-center justify-center overflow-hidden p-4">
+            <div className="relative z-10 w-full h-full flex flex-col items-center justify-center p-4">
                 <motion.h1 
                     initial={{ y: -50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}

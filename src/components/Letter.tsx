@@ -56,7 +56,7 @@ export default function Letter({
           initial={{ scale: 0, opacity: 0, y: 100 }}
           animate={{ scale: 1, opacity: 1, y: 0 }}
           transition={{ delay: delay, duration: 0.6, type: "spring" }}
-          className="relative w-48 h-32 sm:w-64 sm:h-40 md:w-80 md:h-48 bg-pink-100 rounded-lg shadow-xl border-2 border-pink-300 flex items-center justify-center overflow-visible"
+          className="relative w-40 h-24 sm:w-56 sm:h-36 md:w-72 md:h-44 bg-pink-100 rounded-lg shadow-xl border-2 border-pink-300 flex items-center justify-center overflow-visible"
         >
             {/* Envelope Flap */}
             <motion.div 

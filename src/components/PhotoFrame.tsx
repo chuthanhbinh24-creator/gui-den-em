@@ -32,7 +32,7 @@ export default function PhotoFrame({ src, index, onClick, delay }: PhotoFramePro
             delay: delay + 1 // Start swaying after appearing
           }
         }}
-        className="relative bg-white p-2 md:p-3 rounded-xl md:rounded-2xl shadow-lg overflow-hidden border-2 md:border-4 border-pink-200 w-36 h-52 sm:w-52 sm:h-72 md:w-64 md:h-96"
+        className="relative bg-white p-1.5 md:p-3 rounded-lg md:rounded-2xl shadow-lg overflow-hidden border-2 md:border-4 border-pink-200 w-20 h-28 sm:w-32 sm:h-44 md:w-48 md:h-64 lg:w-60 lg:h-80"
       >
         <div className="w-full h-full rounded-lg md:rounded-xl overflow-hidden relative">
             <img 

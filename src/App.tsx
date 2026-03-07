@@ -143,17 +143,17 @@ export default function App() {
                 />
             </div>
 
-            <div className="relative z-10 w-full h-screen flex flex-col items-center justify-center overflow-hidden">
+            <div className="relative z-10 w-full h-screen flex flex-col items-center justify-center overflow-hidden p-4">
                 <motion.h1 
                     initial={{ y: -50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.5 }}
-                    className="text-3xl sm:text-4xl md:text-6xl font-bold text-pink-600 mb-4 md:mb-8 text-center drop-shadow-sm font-script px-4"
+                    className="text-2xl sm:text-3xl md:text-5xl font-bold text-pink-600 mb-2 md:mb-6 text-center drop-shadow-sm font-script px-4 shrink-0"
                 >
                     Chúc Mừng Ngày Quốc Tế Phụ Nữ 8-3
                 </motion.h1>
 
-                <div className="relative w-full flex justify-center items-end gap-2 md:gap-8 h-[300px] md:h-[450px]">
+                <div className="relative w-full flex justify-center items-end gap-1 md:gap-6 h-[250px] sm:h-[350px] md:h-[450px] shrink-0">
                     {/* Left Photos */}
                     <div className="flex gap-2 md:gap-4 items-end">
                         <div className="mb-6 md:mb-12 transform -rotate-3"> {/* Back frame higher */}
@@ -216,7 +216,7 @@ Chúc em ngày 8/3 vui vẻ, luôn xinh đẹp và hạnh phúc bên người m�
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: 20 }}
-                            className="mt-8"
+                            className="mt-4 md:mt-8 shrink-0"
                         >
                             <Magnetic onClick={() => setIsVideoOpen(true)}>
                                 <button className="flex items-center gap-2 px-6 py-2 md:px-8 md:py-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-full shadow-lg hover:shadow-xl transition-shadow font-medium text-sm md:text-base">

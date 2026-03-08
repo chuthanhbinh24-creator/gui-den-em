@@ -13,7 +13,7 @@ interface LetterProps {
 export default function Letter({ 
     onCloseComplete, 
     delay, 
-    content = "Chúc bạn một ngày 8/3 thật nhiều niềm vui, hạnh phúc và luôn xinh đẹp rạng ngời như những đóa hoa. Cảm ơn vì những điều tuyệt vời bạn đã mang đến cho thế giới này!",
+    content = "Chúc em một ngày 8/3 thật nhiều niềm vui, hạnh phúc và luôn xinh đẹp rạng ngời như những đóa hoa. Cảm ơn vì những điều tuyệt vời em đã mang đến cho thế giới này!",
     sender = "~ Thân gửi ~",
     recipient = "Gửi người từng thương"
 }: LetterProps) {

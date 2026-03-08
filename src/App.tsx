@@ -22,7 +22,7 @@ const PHOTOS = [
 const VIDEO_URL = "https://www.dropbox.com/scl/fi/1pnzngn597ynp47bj7c0a/lv_7608946151756205328_20260306003939.mp4?rlkey=5qwg7uxa7rx3q43e1m5ip92hz&st=l7vtp5b3&raw=1";
 
 // Custom Audio Link - Replace this with your own audio URL
-const AUDIO_URL = "https://image2url.com/r2/default/audio/1772899759049-91bf0b8c-e0fe-4b14-82f0-c6440fc1e36d.mp3";
+const AUDIO_URL = "https://www.dropbox.com/scl/fi/ebf59ohhb3p5j8oiof0wb/Track-06-x-N-i-N-y-C-Anh-DJ-ATOM-Mashup-DJ-ATOM.mp3?rlkey=5iakd2s7vc32tqucextrtlx8l&st=xv24090u&dl=0";
 
 export default function App() {
   const [appState, setAppState] = useState<'loading' | 'intro' | 'main'>('loading');
